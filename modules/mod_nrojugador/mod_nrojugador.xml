@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Número de jugador</name>
+    <author>Federico "Magus" Rocca</author>
+    <version>1.0.0</version>
+    <description>Modulo para recuperar el número de jugador desde la DB.</description>
+    <creationDate>23/02/2019</creationDate>
+    <authorEmail>frocca17@gmail.com</authorEmail>
+    <files>
+        <filename>mod_nrojugador.xml</filename>
+        <filename module="mod_nrojugador">mod_nrojugador.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>
