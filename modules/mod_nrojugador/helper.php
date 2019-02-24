@@ -38,7 +38,25 @@ class nroJugador
         $database->setQuery($query);
         //$result = $database->query();
         $result = $database->loadResult();
-        
+
+        // chequeo si $database->loadResult(); volvió vacia, si es así, no tiene cargado el número de jugador
+	if(isset($result) == false || $result == 0)
+	{
+		//Variable no seteada
+		echo "----------------";
+		echo "Variable no seteada";
+		echo "----------------";
+
+	}
+	else
+	{
+		//La variable está seteada
+		echo "----------------";
+                echo "Variable seteada";
+                echo "----------------";
+
+	}
+
         return $result;
     }
 }
