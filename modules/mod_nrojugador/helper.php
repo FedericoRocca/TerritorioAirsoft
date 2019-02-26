@@ -22,8 +22,11 @@ class nroJugador
 	else
 	{
                 //El Nro jugador esta dado de alta
-                $result = 'Tu número de jugador es el ' . $result;
-                return $result;
+$doc = new DOMDocument();
+$pre = '<span style="font-size: 20px; font-weight: 700; margin: 0; padding: 0 15px; line-height: 50px; height: 50px; color: #555555; background: #ededed; xt-transform: uppercase; border-top: 1px solid #fff; border-bottom: 1px solid #fff; box-shadow: inset 0 1px 0 #e1e1e1, inset 0 -1px 0 #e1e1e1;">Tu n&uacute;mero de jugador es ';
+$post = '</span>';
+$doc->loadHTML($pre . $result . $post);
+return $doc->saveHTML();
 	}
     }
 }
