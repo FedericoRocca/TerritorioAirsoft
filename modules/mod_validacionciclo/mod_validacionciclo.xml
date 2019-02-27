@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Validación de ciclo</name>
+    <author>Federico "Magus" Rocca</author>
+    <version>1.0.0</version>
+    <description>Modulo para recuperar el ciclo del jugador desde la DB y validar el ciclo actual.</description>
+    <creationDate>26/02/2019</creationDate>
+    <authorEmail>frocca17@gmail.com</authorEmail>
+    <files>
+        <filename>mod_validacionciclo.xml</filename>
+        <filename module="mod_validacionciclo">mod_validacionciclo.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>
